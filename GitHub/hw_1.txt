@@ -1,0 +1,191 @@
+JSON
+ 4. Создать внешний репозиторий c названием JSON: Repositories -> new -> JSON -> Create repository
+ 5. Клонировать репозиторий JSON на локальный компьютер: git clone https://github.com/ZaytcevaYulia/JSON.git
+ 6. Внутри локального JSON создать файл “new.json”: cat > new.json + Сtrl + C; > new.json
+ 7. Добавить файл под гит: git add .
+ 8. Закоммитить файл: git commit -m "a new file"
+ 9. Отправить файл на внешний GitHub репозиторий: git push
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+	vim new.json
+	"i"
+{	"name" : "Yulia",
+	"age" : 28,
+	"pets" : 0,
+	"future_salary" : "500"
+}
+	"esc" :wq
+ 11. Отправить изменения на внешний репозиторий: 
+	git commit -am "the modified file" 
+	git push
+ 12. Создать файл preferences.json: > preferences.json
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+	cat >> preferences.json
+{	"film" : "Inception",
+	"serial" : "The office",
+	"season" : "spring",
+	"country" : "South Korea"
+}
+	Ctrl + C
+ 14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+	cat > skills.json
+{	"skills" : ["The basics of testing", "Client-server architecture", "Documentation", "Terminal Linux", "GitHub", "Postman", "SQL", "Chrome DevTools", "Mobile testing"]
+}
+	Ctrl + C
+ 15. Отправить сразу 2 файла на внешний репозиторий: 
+	git add .
+	git commit -m "preferences & skills" 
+	git push
+ 16. На веб интерфейсе создать файл bug_report.json:
+	add file
+	create new file bug_report.json
+	commit new file
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе:
+	edit file
+	commit changes
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+	edit file
+{	"ID" : "12/6",
+	"Title" : "The site doesn't open through the address bar in Google_Chrome",
+	"Steps" : ["Open Google Chrome", "Enter https://example.com in the adress bar"],
+	"Expected result" : "The site opens",
+	"Actual result" : "Error"404,
+	"Enviroment" : "Windows 7, Google Chrome 99.0.4844.51",
+	"Severity": "Blocker",
+	"Priority" : "High" 
+}
+ 19. Сделать Commit changes (сохранить) изменения на веб интерфейсе: commit changes
+ 20. Синхронизировать внешний и локальный репозиторий JSON: git pull
+
+
+XML
+ 21. Создать внешний репозиторий c названием XML: repositories -> new -> XML -> Create repository
+ 22. Клонировать репозиторий XML на локальный компьютер: git clone https://github.com/ZaytcevaYulia/XML.git
+ 23. Внутри локального XML создать файл “new.xml”: > new.xml
+ 24. Добавить файл под гит: git add .
+ 25. Закоммитить файл: git commit -m "a new file"
+ 26. Отправить файл на внешний GitHub репозиторий: git push
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+	vim new.xml
+	<info>
+ 	<name>Yulia</name>
+ 	<age>28</age>
+ 	<number_of_pets>0</number_of_pets>
+ 	<salary>500</salary>
+	</info>
+	"i" :wq
+ 28. Отправить изменения на внешний репозиторий: 
+	git commit -am "a modified file"
+	git push
+ 29. Создать файл preferences.xml: touch preferences.xml
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+	vim preferences.json
+	<info>
+	<film>Inception</film>
+	<serial>The office</series>
+	<season>spring</season>
+	<country>South Korea</country>
+	</info>
+	"i" :wq
+ 31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+	cat > skills.xml
+	<skills>
+	<skill>The basics of testing</skill>
+	<skill>Client-server architecture</skill>
+	<skill>Documentation</skill>
+	<skill>Terminal Linux</skill>
+	<skil>GitHub</skill>
+	<skill>Postman</skill>
+	<skill>SQL</skill>
+	<skill>Chrome DevTools</skill>
+	<skill>Mobile testing</skill>
+	</skills>
+	Ctrl + C
+ 32. Сделать коммит в одну строку:
+	git add .; git commit -m "preferences & skills"
+ 33. Отправить сразу 2 файла на внешний репозиторий: git push
+ 34. На веб интерфейсе создать файл bug_report.xml:
+	add file
+	create new file bug_report.xml
+	commit new file
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе:
+	edit file
+	commit changes
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML:
+	edit file
+	<bug_report>
+	<ID>12/6</ID>
+	<Title>The site doesn't open through the address bar in Google Chrome</Title>
+	<Steps>Open Google Chrome, Enter http://example.com in the adress bar</Steps>
+	<Expected result>The site opens</Expected result>
+	<Actual result>Error 404</Actual result>
+	<Enviroment>Windows 7, Google Chrome 99.0.4844.51</Enviroment>
+	<Severity>Blocker</Severity>
+	<Priority>High</Priority>
+	</bug_report>
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе: commit changes
+ 38. Синхронизировать внешний и локальный репозиторий XML: git pull
+
+
+TXT
+ 1. Создать внешний репозиторий c названием TXT: repositories -> new -> TXT -> create repositorie
+ 2. Клонировать репозиторий TXT на локальный компьютер: git clone https://github.com/ZaytcevaYulia/TXT.git
+ 3. Внутри локального TXT создать файл “new.txt”: cat > new.txt + Ctrl+C
+ 4. Добавить файл под гит. git add .
+ 5. Закоммитить файл: git commit -m "a new file"
+ 6. Отправить файл на внешний GitHub репозиторий: git push
+ 7. Отредактировать содержание файла “new.txt” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате TXT.
+	vim new.txt
+	i
+	"My name is Yilia. 
+	I'm 28 years old. 
+	I don't have any pets. 
+	I would like to earn 500$."
+	esc :wq
+ 8. Отправить изменения на внешний репозиторий: git commit -am "the modified file"
+ 9. Создать файл preferences.txt: > preferences.txt
+ 10. В файл preferences.txt” добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате TXT.
+	vim preferences.txt
+	i	
+	"My favourite film is Inception. 
+	And i adore The Office. 
+	I like spring despire of i was born in summer. 
+	My dream is a trip to South Korea."
+	esc :wq
+ 11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
+	> skills.txt
+	vim skills.txt
+	i
+	"I'll have studied The basics of testing, Client-server architecture, Documentation, Terminal Linux, GitHub, Postman, SQL, Chrome DevTools, Mobile testing by the end to the course."
+	esc :wq
+ 12. Сделать коммит в одну строку: 
+	git add .
+	git commit -m "preferences & skills"
+ 13. Отправить сразу 2 файла на внешний репозиторий: git push
+ 14. На веб интерфейсе создать файл bug_report.txt:
+	add file
+	create new file bug_report.txt
+	commit new file
+ 15. Сделать Commit changes (сохранить) изменения на веб интерфейсе
+	edit file
+	commit changes
+ 16. На веб интерфейсе модифицировать файл bug_report.txt, добавить баг репорт в формате TXT.
+	edit file
+	12/6. The site doesn't open through the address bar in Google Chrome
+	
+	Steps : 
+  
+	- Open Google Chrome
+  
+	- Enter http:// in the adress bar
+	
+	Expected result: The site opens
+	
+	Actual result: Error 404
+	
+	Enviroment: Windows 7, Google Chrome 99.0.4844.51
+	
+	Severity: Blocker
+	
+	Priority: High 
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе: commit changes
+ 18. Синхронизировать внешний и локальный репозиторий TXT: git pull
