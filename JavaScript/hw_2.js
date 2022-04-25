@@ -1,4 +1,4 @@
-let string = 'jhgjhg1L@';
+let string = 'yoloChka@23';
 let array = [];
 function checkType(string) {
     if (typeof string === "string") {
