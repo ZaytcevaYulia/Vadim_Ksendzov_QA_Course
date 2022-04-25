@@ -16,13 +16,26 @@ console.log(item_2);
 let item_3 = item_1 + item_2;
 console.log(item_3);
 
+// 10. Создать переменную “item_4”
+// 11. Присвоить переменной item_4 строку “Yolochka”
+// 12. Вывести в консоль item_4.
 let item_4 = "Yolochka";
 console.log(item_4);
 
+// 13. Вывести в консоль сложение item_3 и item_4.
+// 14. Вывести в консоль умножение item_3 и item_4.
 console.log(item_3 + item_4);
 console.log(item_3 * item_4);
 
+// 15. Создать переменную “item_5”
+// 16. Присвоить переменной item_5 переменную item_3
 let item_5 = item_3;
+
+// 17. Создать переменную item_6.
+// 18. Создать переменную item_6_type
+// 19. Присвоить переменной item_6 значение 15
+// 20. Присвоить переменной item_6_type тип переменной item_6
+// 21. Вывести в консоль тип данных item_6 в виде ——  “item_6 == ”  item_6,  “item_6_type == ”  item_6_type ——  
 let item_6 = 15;
 let item_6_type = typeof(item_6);
 console.log("item_6 == " + item_6, "item_6_type == " + item_6_type);
