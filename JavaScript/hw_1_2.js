@@ -23,6 +23,9 @@ checkAge(18);
 checkAge(61);
 
 //Задание 2*
+// Преобразовать задание 1* таким образом, чтобы первым делом в функции проверялся тип данных.
+// И если он не Number - кидалась ошибка.
+
 const checkAgeNumber = function(age){
     if (typeof(age) === "number"){
         if (age < age_2) {
@@ -41,6 +44,9 @@ const checkAgeNumber = function(age){
 checkAgeNumber("cvcxv");
 
 //Задание 3**
+// Преобразовать 2* таким образом, чтобы значение '2' (строка в которой лежит ТОЛЬКО ЦИФРА) 
+// пропускалось, преобразовываясь в number
+
 const checkAgeChange = function(age){
     if (Number(age)){
         if (age < age_2) {
