@@ -1,4 +1,10 @@
 //Задание 1*
+// Преобразовать написанный код в 26-33 hw_1 пунктах в функцию, принимающую на вход возраст.
+// Пример: const checkAge = function(age) {
+// Ваши преобразования
+// }
+// Вывести в консоль результат работы функции с возрастами 17, 18, 61
+
 let age_2 = 18;
 let age_3 = 60;
 const checkAge = function(age){
@@ -12,9 +18,9 @@ const checkAge = function(age){
         console.log("Technical work")
     }
     }
-checkAge('17');
-checkAge('18');
-checkAge('61');
+checkAge(17);
+checkAge(18);
+checkAge(61);
 
 //Задание 2*
 const checkAgeNumber = function(age){
